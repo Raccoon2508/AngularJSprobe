@@ -1,0 +1,120 @@
+<html ng-app="moduleName">
+  <head>
+    <! -- www.techstrikers.com -->
+    <title>My first AngularJS code</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header_block wrapper">
+        <nav class="header_navigation_menu">
+          <div class="header_menu_item main_page">Main</div>
+          <div class="header_menu_item order_page">Second</div>
+        </nav>
+        <div class="header_buttons_block">
+          <div class="header_save_button common_button">Save</div>
+        </div>
+      </div>
+    </header>
+    <div class="content_block wrapper">
+      <div class="left_column_block column">
+        <div class="credentials_block common_block">
+          <div class="name_input_block common_input_block">
+            <input
+              type="text"
+              class="name_input text_input"
+              required
+              name="name"
+            />
+            <label class="input_label" for="name">Name</label>
+          </div>
+          <div class="surname_input_block common_input_block">
+            <input
+              type="text"
+              class="surname_input text_input"
+              required
+              name="surname"
+            />
+            <label class="input_label" for="surname">Surname</label>
+          </div>
+          <div class="surname_input_block common_input_block">
+            <input
+              type="text"
+              class="surname_input text_input"
+              required
+              name="surname"
+            />
+            <label class="input_label" for="surname">DD Country</label>
+          </div>
+        </div>
+
+        <div class="options_block common_block">
+          <div class="option_radio_button common_radio_button">
+            <input
+              type="radio"
+              class="first_option_radio_input common_radio_input"
+              name="first_option"
+            />
+            <label class="input_label" for="first_option">Option 1</label>
+          </div>
+          <div class="option_radio_button common_radio_button">
+            <input
+              type="radio"
+              class="second_option_radio_input common_radio_input"
+              name="second_option"
+            />
+            <label class="input_label" for="second_option">Option 2</label>
+          </div>
+          <div class="option_radio_button common_radio_button">
+            <input
+              type="radio"
+              class="second_option_radio_input common_radio_input"
+              name="third_option"
+            />
+            <label class="input_label" for="third_option">Option 3</label>
+          </div>
+          <div class="email_input_block common_input_block">
+            <input type="text" class="email_input" name="email" required />
+            <label class="input_label" for="surname">email</label>
+          </div>
+        </div>
+        <div class="zip_block common_block">
+          <div class="zip_input_block common_input_block">
+            <input type="text" class="number_input" name="zip" required />
+            <label class="input_label" for="zip">zip(numbers only)</label>
+          </div>
+        </div>
+      </div>
+      <div class="right_column_block column">
+        <div class="results_preview_block common_block">
+          <ul class="results_preview_list">
+            <li class="results_preview_list_item common_list_item">
+              Some data
+            </li>
+            <li class="results_preview_list_item common_list_item">
+              Some data
+            </li>
+            <li class="results_preview_list_item common_list_item">
+              Some data
+            </li>
+            <li class="results_preview_list_item common_list_item">
+              Some data
+            </li>
+            <li class="results_preview_list_item common_list_item">
+              Some data
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+
+    <div ng-controller="myController">
+      <p>Message - {{yourProperty}}</p>
+      <p ng-repeat="item in array">{{item}}</p>
+    </div>
+  </body>
+</html>
